@@ -1,0 +1,5 @@
+ToS:
+ - You aren’t allowed to resell this script.
+ - You aren’t allowed to leak this script.
+
+Breaking the ToS could have legal consequences.
