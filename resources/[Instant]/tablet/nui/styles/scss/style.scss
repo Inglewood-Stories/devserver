@@ -1,0 +1,93 @@
+// Import tailwind play cdn
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 1rem 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    z-index: 10;
+    height: 80vh;
+    opacity: 95%;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .header {
+        // Titlebar
+        height: 3vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+
+        * {
+            padding: 0 0.5rem;
+        }
+
+        .title {
+            height: 100%;
+            width: 100vw;
+            left: 0;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+
+        #close {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.5s ease-in-out;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        #close:hover:not(i) {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.5s ease-in-out;
+            cursor: pointer;
+            z-index: 2;
+
+            &:hover:not(i) {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+
+    .frame {
+        // Frame
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+}
